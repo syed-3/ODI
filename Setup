@@ -1,0 +1,72 @@
+ODI ADMIN
+
+DAY 1
+
+to check user have admin rights 
+
+- win + R
+    - lusrmgr.msc - local user management
+    - groups → administrators
+    - → dotnet_trng → ebs_bench_2023 → all trainee info
+- from desktop - network → view → search active directory → group name
+- mstsc - open remote desktop connection from cmd
+- appwiz.cpl - app wizard (control panel)
+- sysdm.cpl - system properties (environmental variable)
+- two type of installation
+    - silence
+    - attentive
+- java path - c :\program file\java\jdk-1.8 (java home)
+    - c :\program file\java\jdk-1.8\bin (java path)
+
+ODI Admin (DAY - 1 things covered)
+
+1. All Software Information.
+2. 
+3. java installation
+    1. Remote desktop Connection or laptop
+    2. need admin rights
+    3. java(open and oracle JDK)
+        1. Oracle JDK - 64 bit version 1.8_401
+        2. Installation of java
+        3. create JAVA_HOME
+        4. set JAVA PATH
+        5. check java version : java -version
+4. 
+5. Environment variable
+    1. create JAVA_HOME  (case sensitive in linux infra)
+        1. system properties → advanced 
+            1. environment variables
+            2. system variables
+                1. new
+                    1. variable name: JAVA_HOME
+                    2. variable value:   browse directory → c :\program file\java\jdk-1.8
+                    3. ok
+        2. check if the variable declared correctly 
+            1. CMD reads the variable before launch
+                1. echo %JAVA_HOME%
+    2. Edit PATH (case sensitive)
+        1. advance → 
+            1. environment variable
+            2. system variables 
+                1. edit 
+                    1. new - browse :c :\program file\java\jdk-1.8\bin (java path) → move up
+                    2. ok
+                2. ok
+        2. check the if the PATH specified correctly 
+            1. echo %PATH%
+    3. check for java in cmd (interpreter)
+        1. CMD → java -version
+    4. variables in linux are separated by :
+    5. and in variables are separated by ;
+    
+
+JAVA Installation (attentive mode)
+
+1. copy Setup(from ccd) to desktop 
+    1. run as admin → yes
+    2. next → 
+        1. default path → c :\program file\java\jdk-1.8\.  can change the path
+        2. select all 3 icon → drop down → select this feature and all sub feature will be installed on local hard drive 
+        3. next
+    3. next 
+    4. close.
